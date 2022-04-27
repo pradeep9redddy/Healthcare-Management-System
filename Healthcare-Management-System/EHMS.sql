@@ -1,7 +1,7 @@
 /********************----E-Health-CareManagement-System-----***************/
-drop database HealthcareMangaementSystem;
-create database HealthcareMangaementSystem;#Creating a Database
-use HealthcareMangaementSystem;
+drop database HealthcareMangaementSystem_Final;
+create database HealthcareMangaementSystem_Final;#Creating a Database
+use HealthcareMangaementSystem_Final;
 /*************************Users Table******************************/
 create table Users(
 	userID int,
@@ -139,6 +139,7 @@ create table Appointments
     DoctorFees int,
     PaymentStatus varchar(33),
     Appointment_Status varchar(30),
+    primary key(AppointmentID),
     CONSTRAINT FK_p FOREIGN KEY (patientId)REFERENCES Patients(PatientID),
     CONSTRAINT FK_docid FOREIGN KEY (DoctorID) REFERENCES Doctors(DoctorID)
 );

@@ -5,7 +5,7 @@ import java.sql.*;
 public class ConnectionProvider {
 	public static Connection getCon() {
 		try {
-			String url = "jdbc:mysql://localhost:3306/HealthcareMangaementSystem";
+			String url = "jdbc:mysql://localhost:3306/HealthcareMangaementSystem_Final";
 
 			String uname = "root";
 			String pass = "2000";
